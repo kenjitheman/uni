@@ -7,7 +7,7 @@ Data fields are separated by whitespace characters (space or tab). Here's the de
 
 - `0: No precipitation`
 - `-1: Light snow`
-- ``-2: Snow`
+- `-2: Snow`
 - `-3: Heavy snow (snowfall)`
 - `1: Drizzle`
 - `2: Light rain`
