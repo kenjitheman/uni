@@ -37,7 +37,7 @@ int main() {
       : "no one had to borrow money from their parents\n");
 
   for (int i = 0; i < N; i++) {
-    printf("\n[?] person %d: \n [+] earnings: %d \n [+] expenses: %d \n [+] borrowing: %d\n", i, earnings[0+i], expenses[0+i], borrowing[0+i]);
+    printf("\n[?] person %d: \n [+] earnings: %d \n [+] expenses: %d \n [+] borrowing: %d\n", i, earnings[i], expenses[i], borrowing[i]);
   }
 
   return 0;
