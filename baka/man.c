@@ -6,7 +6,7 @@ int main() {
   printf("[+] enter the coefficients of the equation (a, b, t): ");
   scanf("%lf %lf %lf", &a, &b, &t);
   if (a < 0 || b < 0 || t < 0) {
-    printf("[ERR] -> coefficients must be non-negative.\n");
+    printf("[ERR] -> coefficients must be non-negative\n");
     return 1;
   }
   printf("[+] enter the value of x: ");
