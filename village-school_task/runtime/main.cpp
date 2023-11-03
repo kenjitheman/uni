@@ -10,6 +10,10 @@ int main() {
     for (int i = 0; i < numberOfClasses; ++i) {
         std::cout << "[+] Enter the average score for class " << i + 1 << ": ";
         std::cin >> classAverages[i];
+        if (std::cin.fail()) {
+            std::cout << "[E] Invalid input\n";
+            return 1;
+        }
 
         while (std::cin.fail() || classAverages[i] < 0 || classAverages[i] > 100) {
             std::cin.clear();
