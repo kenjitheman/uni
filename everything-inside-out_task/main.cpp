@@ -1,14 +1,8 @@
-#include <algorithm>
-#include <iterator>
 #include <iostream>
 
 int main() {
-    const int SIZE = 10;
-    int arr[SIZE] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    std::reverse(std::begin(arr), std::end(arr));
-    for (const auto &element : arr) {
-        std::cout << element << ' ';
+    int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    for (int i = 9; i >= 0; --i) {
+        std::cout << arr[i] << " ";
     }
-    std::cout << std::endl;
-    return 0;
 }
