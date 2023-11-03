@@ -24,7 +24,7 @@ g++ -o main main.cpp
 
 ### bullshit has not only shit
 
-```cpp
+```rust
 .
 ├── all_coz_of_comma_task
 │   └── main.cpp
