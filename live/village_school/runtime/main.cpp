@@ -3,37 +3,37 @@
 #include <vector>
 
 int main() {
-    const int numberOfClasses = 10;
+    const int numOfClasses = 10;
 
-    std::vector<int> classAverages(numberOfClasses);
+    std::vector<int> classAvg(numOfClasses);
 
-    for (int i = 0; i < numberOfClasses; ++i) {
+    for (int i = 0; i < numOfClasses; ++i) {
         std::cout << "[+] Enter the average score for class " << i + 1 << ": ";
-        std::cin >> classAverages[i];
+        std::cin >> classAvg[i];
         if (std::cin.fail()) {
             std::cout << "[E] Invalid input\n";
             return 1;
         }
 
-        while (std::cin.fail() || classAverages[i] < 0 || classAverages[i] > 100) {
+        while (std::cin.fail() || classAvg[i] < 0 || classAvg[i] > 100) {
             std::cin.clear();
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             std::cout << "[E] Invalid input\nEnter a valid score between 0 and 100: ";
-            std::cin >> classAverages[i];
+            std::cin >> classAvg[i];
         }
     }
 
-    int highestAverage = -1;
+    int highAvg = -1;
 
-    for (int average : classAverages) {
-        if (average > highestAverage) {
-            highestAverage = average;
+    for (int average : classAvg) {
+        if (average > highAvg) {
+            highAvg = average;
         }
     }
 
     std::cout << "[OK] Classes with the highest average score: ";
-    for (int i = 0; i < numberOfClasses; ++i) {
-        if (classAverages[i] == highestAverage) {
+    for (int i = 0; i < numOfClasses; ++i) {
+        if (classAvg[i] == highAvg) {
             std::cout << i + 1 << " ";
         }
     }
