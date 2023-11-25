@@ -63,19 +63,17 @@ g++ -o main main.cpp
 │   └── 6
 │       ├── main
 │       └── main.cpp
-├── live
-│   └── 2023-10-2_forgot
-│       └── main.c
 ├── README.md
-├── static
+├── tasks
 │   ├── credit
 │   │   ├── main.c
 │   │   └── README.md
 │   ├── everything_is_mixed_up
-│   │   ├── 1
+│   │   ├── README.md
+│   │   ├── v1
 │   │   │   └── main.cpp
-│   │   ├── 2
-│   │   └── README.md
+│   │   └── v2
+│   │       └── main.cpp
 │   ├── flower_shop
 │   │   ├── main.cpp
 │   │   └── README.md
