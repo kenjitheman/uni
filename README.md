@@ -69,56 +69,61 @@ g++ -o main main.cpp
 ├── README.md
 ├── static
 │   ├── credit
-│   │   └── main.c
+│   │   ├── main.c
+│   │   └── README.md
+│   ├── everything_is_mixed_up
+│   │   ├── 1
+│   │   │   └── main.cpp
+│   │   ├── 2
+│   │   └── README.md
 │   ├── flower_shop
-│   │   └── main.cpp
+│   │   ├── main.cpp
+│   │   └── README.md
 │   ├── jumps
-│   │   └── main.cpp
-│   ├── reverse_arr
-│   │   └── main.cpp
-│   ├── some
-│   │   ├── cakeman
+│   │   ├── main.cpp
+│   │   └── README.md
+│   ├── linear_and_conditional
+│   │   ├── segment_1
 │   │   │   ├── main.cpp
 │   │   │   └── README.md
-│   │   ├── cashman
-│   │   │   ├── main.c
+│   │   ├── triangle_2
+│   │   │   ├── main.cpp
 │   │   │   └── README.md
-│   │   ├── crypt
-│   │   │   ├── main.c
+│   │   ├── triangle_3
+│   │   │   ├── main.cpp
 │   │   │   └── README.md
-│   │   ├── dots
-│   │   │   ├── main.c
-│   │   │   └── README.md
-│   │   ├── mixman
-│   │   │   ├── main.c
-│   │   │   └── README.md
-│   │   ├── months
-│   │   │   ├── leap_year
-│   │   │   │   └── main.c
-│   │   │   └── month
-│   │   │       └── main.c
-│   │   ├── phman
-│   │   │   ├── main.c
-│   │   │   └── README.md
-│   │   ├── pipe
-│   │   │   ├── main.c
-│   │   │   └── README.md
-│   │   ├── stock
-│   │   │   ├── main.c
-│   │   │   └── README.md
-│   │   └── weather
+│   │   └── triangle_4
+│   │       ├── main.cpp
 │   │       └── README.md
+│   ├── loops
+│   │   ├── main.cpp
+│   │   └── README.md
+│   ├── medical_research
+│   │   ├── main.cpp
+│   │   └── README.md
+│   ├── reverse_arr
+│   │   ├── main.cpp
+│   │   └── README.md
+│   ├── runners
+│   │   ├── main.cpp
+│   │   └── README.md
+│   ├── stead
+│   │   ├── main.cpp
+│   │   └── README.md
 │   ├── through_comma
-│   │   └── main.cpp
+│   │   ├── main.cpp
+│   │   └── README.md
 │   ├── village_school
 │   │   ├── comptime
 │   │   │   └── main.cpp
+│   │   ├── README.md
 │   │   └── runtime
 │   │       └── main.cpp
 │   └── weather
-│       ├── comp_time
+│       ├── comptime
 │       │   └── main.cpp
-│       └── run_time
+│       ├── README.md
+│       └── runtime
 │           └── main.cpp
 └── uml
     ├── class_diagram.md
