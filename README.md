@@ -34,6 +34,12 @@ g++ -o main main.cpp
 
 ```rust
 .
+├── docs
+│   └── srs
+│       ├── en
+│       │   └── README.md
+│       └── ua
+│           └── README.md
 ├── labs
 │   ├── 1
 │   │   ├── v1
@@ -55,74 +61,66 @@ g++ -o main main.cpp
 │   ├── 5
 │   │   └── main.cpp
 │   └── 6
+│       ├── main
 │       └── main.cpp
 ├── live
-│   ├── payman
-│   │   ├── main.c
-│   │   └── README.md
+│   └── 2023-10-2_forgot
+│       └── main.c
+├── README.md
+├── static
+│   ├── credit
+│   │   └── main.c
+│   ├── flower_shop
+│   │   └── main.cpp
+│   ├── jumps
+│   │   └── main.cpp
 │   ├── reverse_arr
 │   │   └── main.cpp
+│   ├── some
+│   │   ├── cakeman
+│   │   │   ├── main.cpp
+│   │   │   └── README.md
+│   │   ├── cashman
+│   │   │   ├── main.c
+│   │   │   └── README.md
+│   │   ├── crypt
+│   │   │   ├── main.c
+│   │   │   └── README.md
+│   │   ├── dots
+│   │   │   ├── main.c
+│   │   │   └── README.md
+│   │   ├── mixman
+│   │   │   ├── main.c
+│   │   │   └── README.md
+│   │   ├── months
+│   │   │   ├── leap_year
+│   │   │   │   └── main.c
+│   │   │   └── month
+│   │   │       └── main.c
+│   │   ├── phman
+│   │   │   ├── main.c
+│   │   │   └── README.md
+│   │   ├── pipe
+│   │   │   ├── main.c
+│   │   │   └── README.md
+│   │   ├── stock
+│   │   │   ├── main.c
+│   │   │   └── README.md
+│   │   └── weather
+│   │       └── README.md
 │   ├── through_comma
 │   │   └── main.cpp
-│   └── village_school
-│       ├── comptime
+│   ├── village_school
+│   │   ├── comptime
+│   │   │   └── main.cpp
+│   │   └── runtime
+│   │       └── main.cpp
+│   └── weather
+│       ├── comp_time
 │       │   └── main.cpp
-│       └── runtime
+│       └── run_time
 │           └── main.cpp
-├── README.md
-├── realtime
-│   ├── 2023-10-2_forgot
-│   │   └── main.c
-│   └── 2023-10-31
-│       ├── flower_shop
-│       │   └── main.cpp
-│       ├── jumps
-│       │   └── main.cpp
-│       └── weather
-│           ├── comp_time
-│           │   └── main.cpp
-│           └── run_time
-│               └── main.cpp
-├── srs
-│   ├── en
-│   │   └── README.md
-│   └── ua
-│       └── README.md
-├── static
-│   ├── cakeman_task
-│   │   ├── main.cpp
-│   │   └── README.md
-│   ├── crypt_task
-│   │   ├── main.c
-│   │   └── README.md
-│   ├── dots_task
-│   │   ├── main.c
-│   │   └── README.md
-│   ├── mixman_task
-│   │   ├── main.c
-│   │   └── README.md
-│   ├── money_task
-│   │   ├── main.c
-│   │   └── README.md
-│   ├── months_task
-│   │   ├── leap_year
-│   │   │   └── main.c
-│   │   └── month
-│   │       └── main.c
-│   ├── phman_task
-│   │   ├── main.c
-│   │   └── README.md
-│   ├── pipe_task
-│   │   ├── main.c
-│   │   └── README.md
-│   ├── stock_task
-│   │   ├── main.c
-│   │   └── README.md
-│   └── weatherman_task
-│       ├── main.c
-│       └── README.md
 └── uml
-    └── 2_diagrams
-        ├── class_diagram.md
-        └── sequence_diagram.md
+    ├── class_diagram.md
+    └── sequence_diagram.md
 ```
