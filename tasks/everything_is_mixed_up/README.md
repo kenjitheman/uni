@@ -1,0 +1,16 @@
+# Task: Everything is Mixed Up
+
+Feeding on the farm through an automated feed dispenser is organized twice a day. The feeding plan is made for no more than 1 month and includes 2 numbers for each day: the weight of feed in the morning, the weight of feed in the evening (in kilograms).
+
+When forming the plan, the operator made a mistake and confused the evening and daytime rates. Compose a program that corrects the plan by swapping the rates for each day. Store the input plan in a one-dimensional array. Do not use additional arrays.
+
+Implement the program in two options from the point of view of input data generation:
+
+1. **User Input:**
+   - The user enters from the keyboard the number of feeding days and the plan for these days.
+   - Test example (plan for 4 days):
+     - Input plan: 10, 7, 12, 9, 12, 10, 15, 13
+     - Fixed plan: 7, 10, 9, 12, 10, 12, 13, 15
+
+2. **Randomly Generated Data:**
+   - The user enters the month number from the keyboard, and the plan data is generated randomly for all days of the specified month.
