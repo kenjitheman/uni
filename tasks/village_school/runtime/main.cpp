@@ -13,14 +13,14 @@ int main() {
             try {
                 std::cout << "[+] Enter the average score for class " << i + 1 << ": ";
                 if (!(std::cin >> classAvg[i]) || classAvg[i] < 0 || classAvg[i] > 100) {
-                    throw std::invalid_argument("Invalid input. Please enter a valid numerical value between 0 and 100.");
+                    throw std::invalid_argument("Invalid input, please enter a valid numerical value between 0 and 100");
                 } else {
                     break;
                 }
             } catch (const std::invalid_argument& e) {
                 std::cin.clear();
                 std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-                std::cerr << "[E] " << e.what() << " Try again." << std::endl;
+                std::cerr << "[E] " << e.what() << " Try again" << std::endl;
             }
         }
     }
