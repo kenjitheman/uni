@@ -40,21 +40,21 @@ int main() {
         std::cout << "Best result: " << bestHigh << "cm\n";
         std::cout << "Average result: " << averageHigh << "cm\n";
     } else {
-        std::cout << "No jumps in the high range.\n";
+        std::cout << "No jumps in the high range\n";
     }
     std::cout << "\nSufficient Range (140-160cm):\n";
     if (sufficientCount > 0) {
         std::cout << "Best result: " << bestSufficient << "cm\n";
         std::cout << "Average result: " << averageSufficient << "cm\n";
     } else {
-        std::cout << "No jumps in the sufficient range.\n";
+        std::cout << "No jumps in the sufficient range\n";
     }
     std::cout << "\nMedium Range (120-140cm):\n";
     if (mediumCount > 0) {
         std::cout << "Best result: " << bestMedium << "cm\n";
         std::cout << "Average result: " << averageMedium << "cm\n";
     } else {
-        std::cout << "No jumps in the medium range.\n";
+        std::cout << "No jumps in the medium range\n";
     }
 
     return 0;
