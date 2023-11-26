@@ -13,14 +13,14 @@ int main() {
         std::cout << "Enter the coordinates of the first point (x1 y1): ";
         std::cin >> x1 >> y1;
         if (std::cin.fail()) {
-            throw std::invalid_argument("Invalid input. Please enter valid numerical values.");
+            throw std::invalid_argument("Invalid input. Please enter valid numerical values");
         }
 
         std::cout << "Enter the coordinates of the second point (x2 y2): ";
         std::cin >> x2 >> y2;
 
         if (std::cin.fail()) {
-            throw std::invalid_argument("Invalid input. Please enter valid numerical values.");
+            throw std::invalid_argument("Invalid input. Please enter valid numerical values");
         }
 
         double length = calculateSegmentLength(x1, y1, x2, y2);
