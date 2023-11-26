@@ -12,12 +12,12 @@ int main() {
             try {
                 std::cout << "[+] Enter temperature for day " << i + 1 << " (must be between -60 and +60): ";
                 if (!(std::cin >> temperatures[i]) || temperatures[i] < -60 || temperatures[i] > 60) {
-                    throw std::invalid_argument("Invalid input. Temperature must be between -60 and +60.");
+                    throw std::invalid_argument("Invalid input -> Temperature must be between -60 and +60");
                 } else {
                     break;
                 }
             } catch (const std::invalid_argument& e) {
-                std::cout << "[ERROR] " << e.what() << " Try again.\n";
+                std::cout << "[ERROR] " << e.what() << " Try again\n";
                 std::cin.clear();
                 std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             }
