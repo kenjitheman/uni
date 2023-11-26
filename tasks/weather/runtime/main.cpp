@@ -1,6 +1,7 @@
 #include <iostream>
 #include <limits>
 #include <vector>
+#include <stdexcept>
 
 int main() {
     const int days = 7;
@@ -8,13 +9,17 @@ int main() {
 
     for (int i = 0; i < days; ++i) {
         while (true) {
-            std::cout << "[+] Enter temperature for day " << i + 1 << " (must be between -60 and +60): ";
-            if (!(std::cin >> temperatures[i]) || temperatures[i] < -60 || temperatures[i] > 60) {
-                std::cout << "[ERROR] Invalid input. Temperature must be between -60 and +60. Try again.\n";
+            try {
+                std::cout << "[+] Enter temperature for day " << i + 1 << " (must be between -60 and +60): ";
+                if (!(std::cin >> temperatures[i]) || temperatures[i] < -60 || temperatures[i] > 60) {
+                    throw std::invalid_argument("Invalid input. Temperature must be between -60 and +60.");
+                } else {
+                    break;
+                }
+            } catch (const std::invalid_argument& e) {
+                std::cout << "[ERROR] " << e.what() << " Try again.\n";
                 std::cin.clear();
                 std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            } else {
-                break;
             }
         }
     }
