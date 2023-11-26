@@ -1,6 +1,7 @@
 #include <iostream>
 #include <limits>
 #include <vector>
+#include <stdexcept>
 
 int main() {
     const int numOfClasses = 10;
@@ -8,18 +9,19 @@ int main() {
     std::vector<int> classAvg(numOfClasses);
 
     for (int i = 0; i < numOfClasses; ++i) {
-        std::cout << "[+] Enter the average score for class " << i + 1 << ": ";
-        std::cin >> classAvg[i];
-        if (std::cin.fail()) {
-            std::cout << "[E] Invalid input\n";
-            return 1;
-        }
-
-        while (std::cin.fail() || classAvg[i] < 0 || classAvg[i] > 100) {
-            std::cin.clear();
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            std::cout << "[E] Invalid input\nEnter a valid score between 0 and 100: ";
-            std::cin >> classAvg[i];
+        while (true) {
+            try {
+                std::cout << "[+] Enter the average score for class " << i + 1 << ": ";
+                if (!(std::cin >> classAvg[i]) || classAvg[i] < 0 || classAvg[i] > 100) {
+                    throw std::invalid_argument("Invalid input. Please enter a valid numerical value between 0 and 100.");
+                } else {
+                    break;
+                }
+            } catch (const std::invalid_argument& e) {
+                std::cin.clear();
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                std::cerr << "[E] " << e.what() << " Try again." << std::endl;
+            }
         }
     }
 
