@@ -34,12 +34,9 @@ int main() {
         }
     }
 
-    std::cout << "Day with the highest temperature: Day " << highestDay << " - "
-        << highestTemp << " degrees\n";
-    std::cout << "Day with the lowest temperature: Day " << lowestDay << " - "
-        << lowestTemp << " degrees\n";
-    std::cout << "Number of days with temperature above average: "
-        << aboveAverageCount << " days\n";
+    std::cout << "Day with the highest temperature: Day " << highestDay << " - " << highestTemp << " degrees\n";
+    std::cout << "Day with the lowest temperature: Day " << lowestDay << " - " << lowestTemp << " degrees\n";
+    std::cout << "Number of days with temperature above average: "<< aboveAverageCount << " days\n";
 
     return 0;
 }
