@@ -17,7 +17,7 @@ int main() {
         for (int i = 0; i < N; ++i) {
             std::cout << "Enter the number of flowers in basket " << i + 1 << ": ";
             if (!(std::cin >> baskets[i])) {
-                throw std::invalid_argument("Invalid input. Please enter a valid numerical value.");
+                throw std::invalid_argument("Invalid input, please enter a valid numerical value");
             }
             flowers[baskets[i]]++;
         }
