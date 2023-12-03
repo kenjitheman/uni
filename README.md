@@ -100,15 +100,20 @@ g++ -o main main.cpp
 │   │   ├── main.cpp
 │   │   └── README.md
 │   ├── reverse_arr
+│   │   ├── main
 │   │   ├── main.cpp
 │   │   └── README.md
 │   ├── runners
+│   │   ├── main.cpp
+│   │   └── README.md
+│   ├── self_photographer
 │   │   ├── main.cpp
 │   │   └── README.md
 │   ├── stead
 │   │   ├── main.cpp
 │   │   └── README.md
 │   ├── through_comma
+│   │   ├── main
 │   │   ├── main.cpp
 │   │   └── README.md
 │   ├── village_school
