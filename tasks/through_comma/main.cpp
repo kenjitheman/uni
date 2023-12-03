@@ -1,23 +1,17 @@
 #include <iostream>
-#include <random>
+#include <cstdlib>
+#include <ctime>
 
 int main() {
-    const int arrSize = 10;
-    int arr[arrSize];
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_int_distribution<> dis(1, 100);
-
-    for (int i = 0; i < arrSize; ++i) {
-        arr[i] = dis(gen);
+    const int size = 10;
+    int arr[size];
+    std::srand(static_cast<unsigned>(std::time(0)));
+    for (int i = 0; i < size; ++i) {
+        arr[i] = std::rand() % 100;
     }
-
-    for (int i = 0; i < arrSize; ++i) {
-        std::cout << arr[i];
-        if (i != arrSize - 1) {
-            std::cout << ", " << std::flush;
-        }
+    std::cout << "Original Array:\n";
+    for (int i = 0; i < size; ++i) {
+        std::cout << arr[i] << " ";
     }
-
-    return 0;
+    std::cout << "\n";
 }
