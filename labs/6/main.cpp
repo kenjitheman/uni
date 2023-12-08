@@ -4,15 +4,15 @@
 using std::endl;
 
 std::vector<int> generateArray(int N, int A, int B) {
-  std::vector<int> res(N);
-  res[0] = A;
-  res[1] = B;
+    std::vector<int> res(N);
+    res[0] = A;
+    res[1] = B;
 
-  for (int i = 2; i < N; ++i) {
-    res[i] = res[i - 1] + res[i - 2];
-  }
+    for (int i = 2; i < N; ++i) {
+        res[i] = res[i - 1] + res[i - 2];
+    }
 
-  return res;
+    return res;
 }
 
 int main() {

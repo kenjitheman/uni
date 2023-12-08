@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 
 int main() {
     const int numOfClasses = 10;
@@ -12,7 +11,7 @@ int main() {
         }
     }
 
-    std::cout << "Classes with the highest average score(s): \n";
+    std::cout << "classes with the highest average score(s): \n";
     for (int i = 0; i < numOfClasses; ++i) {
         if (classAvg[i] == maxAvg) {
             std::cout << i << ": " << classAvg[i] << "\n";

@@ -32,7 +32,7 @@ int main() {
     vector<std::string> subsequentNumbers;
 
     int limit = std::min(9 - input, K);
-    
+
     for (int i = input + 1; i <= input + limit; ++i) {
         subsequentNumbers.push_back(getNumberName(i));
     }

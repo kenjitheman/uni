@@ -1,17 +1,10 @@
-#include <iostream>
 #include <cstdlib>
-#include <ctime>
+#include <iostream>
 
 int main() {
-    const int size = 10;
-    int arr[size];
-    std::srand(static_cast<unsigned>(std::time(0)));
-    for (int i = 0; i < size; ++i) {
-        arr[i] = std::rand() % 100;
+    int arr[10];
+    for (int i = 0; i < 10; i++) {
+        arr[i] = rand() % 100;
+        std::cout << arr[i] << (i < 9 ? ", " : "");
     }
-    std::cout << "Original Array:\n";
-    for (int i = 0; i < size; ++i) {
-        std::cout << arr[i] << " ";
-    }
-    std::cout << "\n";
 }
