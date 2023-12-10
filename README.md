@@ -64,8 +64,6 @@ g++ -o main main.cpp
 │       └── main.cpp
 ├── README.md
 ├── tasks
-│   ├── carshow
-│   │   └── main.cpp
 │   ├── credit
 │   │   ├── main.c
 │   │   └── README.md
@@ -100,15 +98,18 @@ g++ -o main main.cpp
 │   ├── medical_research
 │   │   ├── main.cpp
 │   │   └── README.md
-│   ├── reverse_arr
-│   │   ├── main.cpp
-│   │   └── README.md
 │   ├── runners
 │   │   ├── main.cpp
 │   │   └── README.md
 │   ├── self_photographer
 │   │   ├── main.cpp
 │   │   └── README.md
+│   ├── sent
+│   │   ├── carshow
+│   │   │   └── main.cpp
+│   │   └── reverse_arr
+│   │       ├── main.cpp
+│   │       └── README.md
 │   ├── stead
 │   │   ├── main.cpp
 │   │   └── README.md
@@ -128,6 +129,7 @@ g++ -o main main.cpp
 │       └── runtime
 │           └── main.cpp
 └── uml
-    ├── class_diagram.md
-    └── sequence_diagram.md
+    └── 4.1
+        ├── class_diagram.md
+        └── sequence_diagram.md
 ```
