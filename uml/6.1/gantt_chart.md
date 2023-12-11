@@ -3,12 +3,12 @@
 > This Gantt chart illustrates the development journey of the "Serene Sakura" anime recommendations engine, implemented in the Rust programming language.
 
 ```mermaid
-gantt
+    gantt
     title Serene sakura | Anime Recommendations Engine Development (Rust)
     dateFormat  YYYY-MM-DD
 
     section Planning
-    Define project scope          :p1, 2023-12-25, 15d
+    Define project scope         :p1, 2023-12-25, 15d
     Market Research              :after p1, 20d
     Define feature requirements  :after Market Research, 15d
     Architecture Planning        :after p3, 15d
@@ -17,7 +17,7 @@ gantt
     CLI Design                   :2024-01-15, 20d
     Database Schema Design       :after CLI Design, 20d
     Algorithm design             :after Database Schema Design, 25d
-    User Authentication Design   :after Rust Language Learning, 15d
+    User Authentication Design   :after Database Schema Design, 15d
     Design Review                :after User Authentication Design, 5d
 
     section Development
@@ -34,10 +34,10 @@ gantt
     User Acceptance Testing      :after System Testing, 20d
 
     section Deployment
-    Deployment Planning          :2024-06-20, 20d
-    Alpha Release to Limited Users:after Deployment Planning, 30d
-    Performance Monitoring       :after Alpha Release to Limited Users, 30d
-    Beta Release to Public        :after Performance Monitoring, 20d
-    Gather User Feedback         :after Beta Release to Public, 40d
-    Final Deployment             :after Gather User Feedback, 15d
+    Deployment Planning            :2024-06-20, 20d
+    Alpha Release to Limited Users :after Deployment Planning, 30d
+    Performance Monitoring         :after Alpha Release to Limited Users, 30d
+    Beta Release to Public         :after Performance Monitoring, 20d
+    Gather User Feedback           :after Beta Release to Public, 40d
+    Final Deployment               :after Gather User Feedback, 15d
 ```
