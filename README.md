@@ -33,7 +33,8 @@ g++ -o main main.cpp
 ### bullshit has not only shit
 
 ```rust
-.
+uni
+│
 ├── docs
 │   └── srs
 │       ├── en
