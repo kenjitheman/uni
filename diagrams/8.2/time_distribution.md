@@ -1,5 +1,3 @@
-# Daily Time Distribution
-
 ```mermaid
 pie title Daily Time Distribution
     "Sleep": 8
