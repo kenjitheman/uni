@@ -29,7 +29,6 @@
    - Users are unable to accurately filter and explore anime based on their preferred genres, leading to a compromised user experience.
 
 **6. Attachments:**
-   - **Screenshots/Recordings:** [Attach screenshots of the issue]  
    - **Logs/Error Messages:** No error messages are displayed; the issue is visual.
 
 ---
@@ -75,7 +74,7 @@
    - **Current Status:** In Progress
 
 **2. Assigned To:**
-   - Assigned to Developer - [Developer Name]
+   - Assigned to Developer - kenjitheman
 
 **3. Target Fix Version:**
    - Version 2.1
