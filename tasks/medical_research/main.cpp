@@ -39,8 +39,8 @@ int main() {
     }
 
     cout << "Eligible candidates for the study:\n";
-    for (int index : eligibleCandidates) {
-        cout << "Candidate " << (index + 1) << " with score " << scores[index] << endl;
+    for (int i : eligibleCandidates) {
+        cout << "Candidate " << (i + 1) << " with score " << scores[i] << endl;
     }
 
     return 0;

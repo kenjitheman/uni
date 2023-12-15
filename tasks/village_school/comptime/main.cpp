@@ -11,7 +11,7 @@ int main() {
         }
     }
 
-    std::cout << "classes with the highest average score(s): \n";
+    std::cout << "[INFO] classes with the highest average score(s): \n";
     for (int i = 0; i < numOfClasses; ++i) {
         if (classAvg[i] == maxAvg) {
             std::cout << i << ": " << classAvg[i] << "\n";
