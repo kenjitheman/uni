@@ -44,21 +44,21 @@ Discrete mathematics plays a crucial role in computer science, making its study 
 
 #### Enumeration of elements: A set can be defined by listing all its elements in curly braces.
 
-- **Example**: \(A = \{1, 2, 3, 4, 5\}\)
+- **Example**: A = {1, 2, 3, 4, 5}
 
 #### Description using characteristic property:
 - A set can be described by a condition satisfied by its elements. For example, the set of even natural numbers:
-  - \(B = \{x \mid x \in \mathbb{N}, x \text{ is even}\}\)
+  - B={x∣x∈N,x is even}B={x∣x∈N,x is even}
     - This is read as "B is the set of x such that x is a natural number and x is even."
 
 #### Graphical method (Venn diagram):
 - Representation of sets using circles and their intersections. Each circle represents a set, and their intersection shows common elements.
   - For example:
-    - \(C = \{1, 2, 3\}\), \(D = \{3, 4, 5\}\)
+    - (C = {1, 2, 3}), (D = {3, 4, 5})
 
 #### Formula representation:
 - Some sets can be defined using mathematical formulas.
-  - For example: \(E = \{x^2 \mid x \in \mathbb{Z}\}\)
+  - For example: $E={x2∣x∈Z}E={x2∣x∈Z}$
     - This is the set of all squares of integers.
 
 These methods allow for the specification and description of sets in various ways based on the requirements of the task or context.
@@ -67,24 +67,24 @@ These methods allow for the specification and description of sets in various way
 
 ### Relations Between Sets:
 
-The relation between two sets A and B is a subset of the Cartesian product A × B, where A × B represents the set of all possible pairs \((a, b)\), where \(a \in A\) and \(b \in B\).
+The relation between two sets A and B is a subset of the Cartesian product A × B, where A × B represents the set of all possible pairs $((a, b))$, where $(a \in A)$ and $(b \in B)$.
 
 #### Possible types of relations:
 
 - **Equality**:
-  - If every element of set A is also an element of set B, and vice versa, they are equal, denoted as \(A = B\).
+  - If every element of set A is also an element of set B, and vice versa, they are equal, denoted as $(A = B)$.
 
 - **Subset**:
-  - If every element of set A is an element of set B, then A is a subset of B, denoted as \(A \subseteq B\).
+  - If every element of set A is an element of set B, then A is a subset of B, denoted as $(A \subseteq B)$.
 
 - **Disjointness**:
-  - If no element of set A is an element of set B, and vice versa, they are disjoint, denoted as \(A \cap B = \emptyset\) (where \(\emptyset\) is the empty set).
+  - If no element of set A is an element of set B, and vice versa, they are disjoint, denoted as $(A \cap B = \emptyset)$ $(where (\emptyset)$ is the empty set).
 
 - **Intersection**:
-  - A relation containing only those pairs \((a, b)\) for which \(a\) is an element of A and \(b\) is an element of B. Denoted as \(A \cap B\).
+  - A relation containing only those pairs $((a, b))$ for which $(a)$ is an element of $A$ and $(b)$ is an element of B. Denoted as $(A \cap B)$.
 
 - **Union**:
-  - A relation containing pairs that belong to either A or B (or both). Denoted as \(A \cup B\).
+  - A relation containing pairs that belong to either A or B (or both). Denoted as $(A \cup B)$.
 
 - **Geometric Representation of Sets**:
   - Geometric representation of sets can be done using Venn diagrams or graphical representations.
@@ -95,7 +95,7 @@ The relation between two sets A and B is a subset of the Cartesian product A × 
 - **Graphical Representations**:
   - Use of graphs to represent elements of sets and relationships between them.
   - Each element of a set can be represented as a vertex, and relationships as edges.
-  - For example, for sets \(A = \{1, 2, 3\}\) and \(B = \{2, 3, 4\}\):
+  - For example, for sets $(A = \{1, 2, 3\})$ and $(B = \{2, 3, 4\})$:
 
 ```haskell
 A:   1 -- 2 -- 3
@@ -165,60 +165,60 @@ Properties of set operations help understand the rules that are followed when us
 ### Commutativity:
 
 - **Union ( ∪ )**:
-  - \(A \cup B = B \cup A\)
+  - $(A \cup B = B \cup A)$
 
 - **Intersection ( ∩ )**:
-  - \(A \cap B = B \cap A\)
+  - $(A \cap B = B \cap A)$
 
 Union and intersection of sets are commutative operations, meaning the order of sets is not important.
 
 ### Associativity:
 
 - **Union ( ∪ )**:
-  - \((A \cup B) \cup C = A \cup (B \cup C)\)
+  - $((A \cup B) \cup C = A \cup (B \cup C))$
 
 - **Intersection ( ∩ )**:
-  - \((A \cap B) \cap C = A \cap (B \cap C)\)
+  - $((A \cap B) \cap C = A \cap (B \cap C))$
 
 Union and intersection of sets are associative operations, meaning the order of operation is not important in consecutive applications.
 
 ### Distributivity:
 
 - **Intersection over Union**:
-  - \(A \cap (B \cup C) = (A \cap B) \cup (A \cap C)\)
+  - $(A \cap (B \cup C) = (A \cap B) \cup (A \cap C))$
 
 - **Union over Intersection**:
-  - \(A \cup (B \cap C) = (A \cup B) \cap (A \cup C)\)
+  - $(A \cup (B \cap C) = (A \cup B) \cap (A \cup C))$
 
 Union and intersection distribute over each other with respect to other operations.
 
 ### Idempotence:
 
 - **Union ( ∪ )**:
-  - \(A \cup A = A\)
+  - $(A \cup A = A)$
 
 - **Intersection ( ∩ )**:
-  - \(A \cap A = A\)
+  - $(A \cap A = A)$
 
 Union or intersection of a set with itself yields the same set.
 
 ### Identity:
 
 - **Union ( ∪ )**:
-  - \(A \cup \emptyset = A\)
+  - $(A \cup \emptyset = A)$
 
 - **Intersection ( ∩ )**:
-  - \(A \cap U = A\)
+  - $(A \cap U = A)$
 
 Union with an empty set or intersection with the universal set yields the same set.
 
 ### Complementarity:
 
 - **Union with Complement**:
-  - \(A \cup A' = U\)
+  - $(A \cup A' = U)$
 
 - **Intersection with Complement**:
-  - \(A \cap A' = \emptyset\)
+  - $(A \cap A' = \emptyset)$
 
 Union with the complement gives the universal set, and intersection with the complement gives the empty set.
 
@@ -226,34 +226,34 @@ These properties aid in working with sets and ensure their adherence to mathemat
 
 ## 6. Cartesian Product of Sets
 
-**Cartesian Product of Sets** is a mathematical operation defined for two sets A and B, forming a new set where each element is an ordered pair, with the first element from set A and the second from set B. The Cartesian product is denoted as \(A \times B\).
+**Cartesian Product of Sets** is a mathematical operation defined for two sets A and B, forming a new set where each element is an ordered pair, with the first element from set A and the second from set B. The Cartesian product is denoted as $(A \times B)$.
 
-- For example, if \(A = \{1, 2\}\) and \(B = \{a, b\}\), then their Cartesian product is:
-  - \(A \times B = \{(1, a), (1, b), (2, a), (2, b)\}\)
+- For example, if $(A = \{1, 2\})$ and $(B = \{a, b\})$, then their Cartesian product is:
+  - $(A \times B = \{(1, a), (1, b), (2, a), (2, b)\})$
 
 ### The Cartesian Product of Sets has several important properties:
 
-- The number of elements in the Cartesian product is the product of the number of elements in the original sets: \(|A \times B| = |A| \cdot |B|\).
+- The number of elements in the Cartesian product is the product of the number of elements in the original sets: $(|A \times B| = |A| \cdot |B|)$.
 
-- The Cartesian product is associative: \((A \times B) \times C = A \times (B \times C)\).
+- The Cartesian product is associative: $((A \times B) \times C = A \times (B \times C))$.
 
-- The Cartesian product is commutative: \(A \times B = B \times A\).
+- The Cartesian product is commutative: $(A \times B = B \times A)$.
 
 ### Some possible exam questions about the Cartesian product of sets:
 
 #### How is the Cartesian product of sets defined?
-- The Cartesian product of sets A and B, denoted as \(A \times B\), is the set of all possible ordered pairs \((a, b)\), where \(a\) belongs to set A and \(b\) belongs to set B.
+- The Cartesian product of sets A and B, denoted as $(A \times B)$, is the set of all possible ordered pairs $((a, b))$, where $(a)$ belongs to set A and $(b)$ belongs to set B.
 
 #### Give an example of the Cartesian product for specific sets.
-- For example, if \(A = \{1, 2\}\) and \(B = \{a, b\}\), then \(A \times B = \{(1, a), (1, b), (2, a), (2, b)\}\).
+- For example, if $(A = \{1, 2\})$ and $(B = \{a, b\})$, then $(A \times B = \{(1, a), (1, b), (2, a), (2, b)\})$.
 
 #### What properties does the Cartesian product of sets have?
-- The number of elements in the Cartesian product is the product of the number of elements in the original sets: \(|A \times B| = |A| \cdot |B|\).
-- The Cartesian product is associative: \((A \times B) \times C = A \times (B \times C)\).
-- The Cartesian product is commutative: \(A \times B = B \times A\).
+- The number of elements in the Cartesian product is the product of the number of elements in the original sets: $(|A \times B| = |A| \cdot |B|)$.
+- The Cartesian product is associative: $((A \times B) \times C = A \times (B \times C))$.
+- The Cartesian product is commutative: $(A \times B = B \times A)$.
 
 #### How to compute the number of elements in the Cartesian product of two sets?
-- The number of elements in the Cartesian product \(A \times B\) is equal to the product of the number of elements in sets A and B.
+- The number of elements in the Cartesian product $(A \times B)$ is equal to the product of the number of elements in sets A and B.
 
 #### What are the main uses of the Cartesian product in computer science and information technology?
 - In databases for modeling relationships between tables.
@@ -396,15 +396,15 @@ The number of combinations C(n, m) represents the number of all possible paths o
 
 ### 1. Permutations with Repetition:
 
-Permutation with repetition for a set with n elements, where some elements may be repeated, is an ordered set of all possible arrangements of these elements. The number of permutations with repetition for a set with n elements (where some elements may be repeated) and choosing m elements is determined by the formula \( n^m \).
+Permutation with repetition for a set with n elements, where some elements may be repeated, is an ordered set of all possible arrangements of these elements. The number of permutations with repetition for a set with n elements (where some elements may be repeated) and choosing m elements is determined by the formula $n^m$.
 
 ### 2. Arrangements with Repetition:
 
-Arrangements with repetition for a set with n elements and choosing m elements are ordered sets of all possible arrangements of m elements from the set of n, where elements can be repeated. The number of arrangements with repetition is determined by the formula: \( n^m \).
+Arrangements with repetition for a set with n elements and choosing m elements are ordered sets of all possible arrangements of m elements from the set of n, where elements can be repeated. The number of arrangements with repetition is determined by the formula: $(n^m)$.
 
 ### 3. Combinations with Repetition:
 
-Combinations with repetition for a set with n elements and choosing m elements are all possible subsets of size m that can be formed from the set of n, where elements can be repeated. The number of combinations with repetition is determined by the formula: \( C(n + m -1, m) \).
+Combinations with repetition for a set with n elements and choosing m elements are all possible subsets of size m that can be formed from the set of n, where elements can be repeated. The number of combinations with repetition is determined by the formula: $( C(n + m -1, m) )$.
 
 These combinatorial configurations with repetition are important for modeling situations where one or more objects can be chosen more than once.
 
@@ -661,7 +661,7 @@ This number grows rapidly with an increase in the number of Boolean variables, a
 The primary elementary Boolean functions include:
 
 1. **Logical NOT (NOT):**
-   - Notation: \(f(x) = \overline{x}\)
+   - Notation: $(f(x) = \overline{x})$
    - Truth table:
      - | x | f(x) |
        |---|------|
@@ -669,7 +669,7 @@ The primary elementary Boolean functions include:
        | 1 |   0  |
 
 2. **Logical AND:**
-   - Notation: \(f(x, y) = x \cdot y\)
+   - Notation: $(f(x, y) = x \cdot y)$
    - Truth table:
      - | x | y | f(x, y) |
        |---|---|---------|
@@ -679,7 +679,7 @@ The primary elementary Boolean functions include:
        | 1 | 1 |    1    |
 
 3. **Logical OR:**
-   - Notation: \(f(x, y) = x + y\)
+   - Notation: $(f(x, y) = x + y)$
    - Truth table:
      - | x | y | f(x, y) |
        |---|---|---------|
@@ -689,7 +689,7 @@ The primary elementary Boolean functions include:
        | 1 | 1 |    1    |
 
 4. **Logical XOR (Exclusive OR):**
-   - Notation: \(f(x, y) = x \oplus y\)
+   - Notation: $(f(x, y) = x \oplus y)$
    - Truth table:
      - | x | y | f(x, y) |
        |---|---|---------|
@@ -721,27 +721,27 @@ The implementation of Boolean functions may also involve the use of logical expr
 
 Two Boolean formulas are considered equivalent if they yield the same values for all possible combinations of input values. Equivalence indicates that these formulas perform the same logical operations and represent the same Boolean function.
 
-It is denoted as the equivalence of two formulas: \(f1 \equiv f2\), where \(f1\) and \(f2\) are two Boolean formulas.
+It is denoted as the equivalence of two formulas: $(f1 \equiv f2)$, where $(f1)$ and $(f2)$ are two Boolean formulas.
 
 **Identity of Formulas:**
 
 Two Boolean formulas are considered identical if they yield the same values for all possible combinations of input values, and they represent the exact same Boolean function. Identity means that these formulas are interchangeable in any logical expression without changing its value.
 
-It is denoted as the identity of two formulas: \(f1 \equiv f2\), where \(f1\) and \(f2\) are two Boolean formulas.
+It is denoted as the identity of two formulas: $(f1 \equiv f2)$, where $(f1)$ and $(f2)$ are two Boolean formulas.
 
 **Examples:**
 
-- If we have the formulas \(A * (B + C)\) and \(A * B + A * C\), they are equivalent because they represent the same logical operations.
-- However, if we have the formulas \(A + 0\) and \(A\), they are identical because their values match for all possible combinations of the variable A.
+- If we have the formulas $(A * (B + C))$ and $(A * B + A * C)$, they are equivalent because they represent the same logical operations.
+- However, if we have the formulas $(A + 0)$ and $(A)$, they are identical because their values match for all possible combinations of the variable A.
 
 ## 26. Principle of Duality
 
-For any Boolean function \(f(x_1, x_2, ..., x_n)\), there exists a dual Boolean function \(g(x_1, x_2, ..., x_n)\) such that for any input vector \(x_1, x_2, ..., x_n\), the following equality holds:
+For any Boolean function $(f(x_1, x_2, ..., x_n))$, there exists a dual Boolean function $(g(x_1, x_2, ..., x_n))$ such that for any input vector $(x_1, x_2, ..., x_n)$, the following equality holds:
 
 ### Explanation
 
-- If \(f\) evaluates to 1 for a specific input vector, then \(g\) evaluates to 0 for the same input vector, and vice versa.
-- Therefore, one can use De Morgan's theorem to obtain \(g\) from the values of \(f\), and vice versa.
+- If $(f)$ evaluates to 1 for a specific input vector, then \(g\) evaluates to 0 for the same input vector, and vice versa.
+- Therefore, one can use De Morgan's theorem to obtain $(g)$ from the values of $(f)$, and vice versa.
 
 The Principle of Duality is particularly useful when working with Boolean functions, as it allows for the representation of one function in terms of another. This can be important for the analysis and optimization of Boolean expressions.
 
@@ -751,8 +751,8 @@ The Principle of Duality is particularly useful when working with Boolean functi
 
 1. Disjunctive Normal Form is a logical expression that represents a disjunction of conjunctions of Boolean variables or their negations. In other words, it is the sum of products.
 
-2. For example, the DNF for the function \(f(x, y, z) = xy + \overline{x}z\) looks like:
-    - \(f(x, y, z) = (x \cdot y) + (\overline{x} \cdot z)\)
+2. For example, the DNF for the function $(f(x, y, z) = xy + \overline{x}z)$ looks like:
+    $$(f(x, y, z) = (x \cdot y) + (\overline{x} \cdot z))$$
 
 3. In DNF, the function is expressed as a disjunction of conjunctions, where each term corresponds to one combination of input variables for which the function evaluates to 1.
 
@@ -760,8 +760,8 @@ The Principle of Duality is particularly useful when working with Boolean functi
 
 1. Conjunctive Normal Form is a logical expression that represents a conjunction of disjunctions of Boolean variables or their negations. It is the product of sums.
 
-2. For example, the CNF for the function \(f(x, y, z) = (x + y) \cdot (\overline{x} + z)\) looks like:
-    - \(f(x, y, z) = (x \cdot \overline{x}) + (x \cdot z) + (y \cdot \overline{x}) + (y \cdot z)\)
+2. For example, the CNF for the function $(f(x, y, z) = (x + y) \cdot (\overline{x} + z))$ looks like:
+    $$(f(x, y, z) = (x \cdot \overline{x}) + (x \cdot z) + (y \cdot \overline{x}) + (y \cdot z))$$
 
 3. In CNF, the function is expressed as a conjunction of disjunctions, where each term corresponds to one combination of input variables for which the function evaluates to 0.
 
@@ -773,9 +773,9 @@ The Principle of Duality is particularly useful when working with Boolean functi
 
 Perfect Disjunctive Normal Form is a Disjunctive Normal Form (DNF) in which there are no redundant (unnecessary) terms, i.e., those that have a value of 0 for all combinations of input values where the function evaluates to 1.
 
-For example, for the function \(f(x, y, z) = x \cdot y + \overline{x} \cdot z\), the PDNF would be:
+For example, for the function $(f(x, y, z) = x \cdot y + \overline{x} \cdot z)$, the PDNF would be:
 
-\[f(x, y, z) = x \cdot y + \overline{x} \cdot z\]
+$$f(x, y, z) = x \cdot y + \overline{x} \cdot z$$
 
 In this case, each term is essential for expressing the function.
 
@@ -783,9 +783,9 @@ In this case, each term is essential for expressing the function.
 
 Perfect Conjunctive Normal Form is a Conjunctive Normal Form (CNF) in which there are no redundant (unnecessary) factors, i.e., those that have a value of 1 for all combinations of input values where the function evaluates to 0.
 
-For example, for the function \(f(x, y, z) = (x + y) \cdot (\overline{x} + z)\), the PCNF would be:
+For example, for the function $$(f(x, y, z) = (x + y) \cdot (\overline{x} + z))$$, the PCNF would be:
 
-\[f(x, y, z) = (x + y) \cdot (\overline{x} + z)\]
+$$f(x, y, z) = (x + y) \cdot (\overline{x} + z)$$
 
 In this case, each factor is essential for expressing the function.
 
@@ -823,9 +823,9 @@ Complete Systems of Boolean Functions are sets of Boolean functions that can exp
 
 ### Conjunction and Negation (AND and NOT):
 
-1. **Conjunction (AND):** Represented as \(f(x, y) = xy\). The function evaluates to 1 only when both arguments `x` and `y` are equal to 1.
+1. **Conjunction (AND):** Represented as $f(x, y) = xy$. The function evaluates to 1 only when both arguments `x` and `y` are equal to 1.
 
-2. **Negation (NOT):** Represented as \(f(x) = \overline{x}\). The function evaluates to 1 if the argument `x` is equal to 0, and vice versa.
+2. **Negation (NOT):** Represented as $f(x) = \overline{x}$. The function evaluates to 1 if the argument `x` is equal to 0, and vice versa.
 
 These two functions form a complete system of Boolean functions since any other Boolean function can be expressed using them.
 
@@ -833,7 +833,7 @@ These two functions form a complete system of Boolean functions since any other 
 
 1. **Conjunction (AND):** As in the previous example.
 
-2. **Disjunction (OR):** Represented as \(f(x, y) = x + y\). The function evaluates to 1 if at least one of the arguments `x` or `y` is equal to 1.
+2. **Disjunction (OR):** Represented as $f(x, y) = x + y$. The function evaluates to 1 if at least one of the arguments `x` or `y` is equal to 1.
 
 This pair of functions also forms a complete system of Boolean functions.
 
@@ -845,9 +845,9 @@ Complete systems of Boolean functions are sets of Boolean functions that can exp
 
 ### Conjunction and Negation (AND and NOT):
 
-1. **Conjunction (AND):** Denoted as $(f(x, y) = xy)$. The function takes the value 1 only when both arguments `x` and `y` are equal to 1.
+1. **Conjunction (AND):** Denoted as $f(x, y) = xy$. The function takes the value 1 only when both arguments `x` and `y` are equal to 1.
 
-2. **Negation (NOT):** Denoted as $(f(x) = \overline{x})$. The function takes the value 1 if the argument `x` is equal to 0, and vice versa.
+2. **Negation (NOT):** Denoted as $f(x) = \overline{x}$. The function takes the value 1 if the argument `x` is equal to 0, and vice versa.
 
 These two functions form a complete system of Boolean functions since any other Boolean function can be expressed using them.
 
@@ -871,9 +871,9 @@ Boolean functions can be represented as Zhegalkin polynomials using variables $(
 
 $$f(x_1, x_2, ..., x_n) = \sum_{S \subseteq \{1,2,...,n\}} a_S \cdot \prod_{i \in S} x_i$$
 
-where $(S)$ is a subset of the set $(\{1,2,...,n\})$, and $(a_S)$ are coefficients taking values 0 or 1.
+where $(S)$ is a subset of the set $(\{1,2,...,n\}$, and $(a_S)$ are coefficients taking values 0 or 1.
 
-For example, for the function $(f(x, y) = x \oplus y)$ (XOR), the Zhegalkin polynomial looks like this:
+For example, for the function $f(x, y) = x \oplus y$ (XOR), the Zhegalkin polynomial looks like this:
 
 $$f(x, y) = x \oplus y = x + y - 2xy$$
 
