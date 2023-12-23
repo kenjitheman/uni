@@ -10,25 +10,20 @@ struct Gift {
     double cost;
 };
 
-struct Employee {
-    string name;
-    vector<Gift> gifts;
-};
-
-void displayGifts(const std::vector<Employee> &employees) {
+void displayGifts(const vector<pair<string, vector<Gift>>> &employees) {
     cout << "[INFO] list of gifts:\n";
     for (const auto &employee : employees) {
-        cout << employee.name << ":\n";
-        for (const auto &gift : employee.gifts) {
+        cout << employee.first << ":\n";
+        for (const auto &gift : employee.second) {
             cout << "  - " << gift.name << ": " << gift.cost << " hryvnias\n";
         }
     }
 }
 
-double getTotalCost(const vector<Employee> &employees) {
+double getTotalCost(const vector<pair<string, vector<Gift>>> &employees) {
     double totalCost = 0.0;
     for (const auto &employee : employees) {
-        for (const auto &gift : employee.gifts) {
+        for (const auto &gift : employee.second) {
             totalCost += gift.cost;
         }
     }
@@ -44,17 +39,29 @@ void determineBudgetStatus(double budget, double totalCost) {
     }
 }
 
-void findTheMostExpensiveAndCheapestGift(const vector<Employee> &employees) {
-    double maxCost = std::numeric_limits<double>::min();
-    double minCost = std::numeric_limits<double>::max();
-    string maxGift, minGift;
+void findTheMostExpensive(const vector<pair<string, vector<Gift>>> &employees) {
+    double maxCost = numeric_limits<double>::min();
+    string maxGift;
 
     for (const auto &employee : employees) {
-        for (const auto &gift : employee.gifts) {
+        for (const auto &gift : employee.second) {
             if (gift.cost > maxCost) {
                 maxCost = gift.cost;
                 maxGift = gift.name;
             }
+        }
+    }
+
+    cout << "[INFO] the most expensive gift: " << maxGift << " (" << maxCost
+        << " UAH)\n";
+}
+
+void findTheCheapest(const vector<pair<string, vector<Gift>>> &employees) {
+    double minCost = numeric_limits<double>::max();
+    string minGift;
+
+    for (const auto &employee : employees) {
+        for (const auto &gift : employee.second) {
             if (gift.cost < minCost) {
                 minCost = gift.cost;
                 minGift = gift.name;
@@ -62,8 +69,8 @@ void findTheMostExpensiveAndCheapestGift(const vector<Employee> &employees) {
         }
     }
 
-    cout << "[INFO] the most expensive gift: " << maxGift << " (" << maxCost << " UAH)\n";
-    cout << "[INFO] the cheapest gift: " << minGift << " (" << minCost << " UAH)\n";
+    cout << "[INFO] the cheapest gift: " << minGift << " (" << minCost
+        << " UAH)\n";
 }
 
 int main() {
@@ -84,42 +91,49 @@ int main() {
         return 1;
     }
 
-    vector<Employee> employees(n);
+    vector<pair<string, vector<Gift>>> employees;
     for (int i = 0; i < n; ++i) {
+        string employeeName;
         cout << "[+] enter employee name: ";
-        cin >> employees[i].name;
-        if (employees[i].name.empty() || employees[i].name.length() > 20 || employees[i].name.find(' ') != string::npos) {
+        cin >> employeeName;
+        if (employeeName.empty() || employeeName.length() > 20 ||
+                employeeName.find(' ') != string::npos) {
             cout << "[ERROR] invalid employee name\n";
             return 1;
         }
 
         int m;
-        cout << "[+] enter the number of gifts for " << employees[i].name << ": ";
+        cout << "[+] enter the number of gifts for " << employeeName << ": ";
         cin >> m;
         if (m <= 0) {
             cout << "[ERROR] invalid number of gifts\n";
             return 1;
         }
 
+        vector<Gift> gifts;
         for (int j = 0; j < m; ++j) {
             Gift gift;
             cout << "[+] enter gift details (to whom, name, cost): ";
             cin >> gift.recipient >> gift.name >> gift.cost;
 
-            if (gift.recipient.empty() || gift.recipient.length() > 20 || gift.recipient.find(' ') != string::npos) {
+            if (gift.recipient.empty() || gift.recipient.length() > 20 ||
+                    gift.recipient.find(' ') != string::npos) {
                 cout << "[ERROR] invalid recipient name\n";
                 return 1;
             }
 
-            employees[i].gifts.push_back(gift);
+            gifts.push_back(gift);
         }
+
+        employees.push_back(make_pair(employeeName, gifts));
     }
 
     displayGifts(employees);
     double totalCost = getTotalCost(employees);
 
     determineBudgetStatus(totalBudget, totalCost);
-    findTheMostExpensiveAndCheapestGift(employees);
+    findTheMostExpensive(employees);
+    findTheCheapest(employees);
 
     return 0;
 }
