@@ -45,6 +45,15 @@ g++ -o main main.cpp
 │   └── 8.2
 │       └── time_distribution.md
 ├── docs
+│   ├── bug_report
+│   │   └── README.md
+│   ├── cs
+│   │   └── ds
+│   │       └── qa
+│   │           ├── en
+│   │           │   └── ds.md
+│   │           └── ua
+│   │               └── ds.md
 │   ├── srs
 │   │   ├── en
 │   │   │   └── README.md
@@ -58,6 +67,10 @@ g++ -o main main.cpp
 │   │   │   └── main.cpp
 │   │   └── v2
 │   │       └── main.cpp
+│   ├── 10
+│   │   └── main.cpp
+│   ├── 11
+│   │   └── main.cpp
 │   ├── 2
 │   │   └── main.c
 │   ├── 3
@@ -74,13 +87,19 @@ g++ -o main main.cpp
 │   │   └── main.cpp
 │   ├── 6
 │   │   └── main.cpp
-│   └── 7
-│       └── main.cpp
+│   ├── 7
+│   │   └── main.cpp
+│   └── 9
+│       ├── 1
+│       │   └── main.cpp
+│       ├── 2
+│       │   └── main.cpp
+│       ├── 3
+│       │   └── main.cpp
+│       └── 4
+│           └── main.cpp
 ├── README.md
 └── tasks
-    ├── credit
-    │   ├── main.c
-    │   └── README.md
     ├── everything_is_mixed_up
     │   ├── README.md
     │   ├── v1
@@ -112,6 +131,9 @@ g++ -o main main.cpp
     ├── medical_research
     │   ├── main.cpp
     │   └── README.md
+    ├── new_year_gifts
+    │   ├── main.cpp
+    │   └── README.md
     ├── runners
     │   ├── main.cpp
     │   └── README.md
@@ -121,13 +143,16 @@ g++ -o main main.cpp
     ├── sent
     │   ├── carshow
     │   │   └── main.cpp
-    │   └── reverse_arr
+    │   ├── credit
+    │   │   ├── main.c
+    │   │   └── README.md
+    │   ├── reverse_arr
+    │   │   ├── main.cpp
+    │   │   └── README.md
+    │   └── through_comma
     │       ├── main.cpp
     │       └── README.md
     ├── stead
-    │   ├── main.cpp
-    │   └── README.md
-    ├── through_comma
     │   ├── main.cpp
     │   └── README.md
     ├── village_school
