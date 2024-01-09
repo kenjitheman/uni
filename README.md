@@ -15,7 +15,7 @@
 <br>
 
 ```sh
-git clone https://github.com/kenjitheman/uni.git
+git clone https://github.com/btwkenji/uni.git
 ```
 
 ```sh
