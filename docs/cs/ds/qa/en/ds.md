@@ -736,7 +736,7 @@ It is denoted as the identity of two formulas: $(f1 \equiv f2)$, where $(f1)$ an
 
 ## 26. Principle of Duality
 
-For any Boolean function $(f(x_1, x_2, ..., x_n))$, there exists a dual Boolean function $(g(x_1, x_2, ..., x_n))$ such that for any input vector $(x_1, x_2, ..., x_n)$, the following equality holds:
+For any Boolean function $f(x_1, x_2, ..., x_n)$, there exists a dual Boolean function $g(x_1, x_2, ..., x_n)$ such that for any input vector $(x_1, x_2, ..., x_n)$, the following equality holds.
 
 ### Explanation
 
@@ -751,8 +751,8 @@ The Principle of Duality is particularly useful when working with Boolean functi
 
 1. Disjunctive Normal Form is a logical expression that represents a disjunction of conjunctions of Boolean variables or their negations. In other words, it is the sum of products.
 
-2. For example, the DNF for the function $(f(x, y, z) = xy + \overline{x}z)$ looks like:
-    $$(f(x, y, z) = (x \cdot y) + (\overline{x} \cdot z))$$
+2. For example, the DNF for the function $f(x, y, z) = xy + \overline{x}z)$ looks like:
+    $$f(x, y, z) = (x \cdot y) + (\overline{x} \cdot z)$$
 
 3. In DNF, the function is expressed as a disjunction of conjunctions, where each term corresponds to one combination of input variables for which the function evaluates to 1.
 
@@ -760,8 +760,8 @@ The Principle of Duality is particularly useful when working with Boolean functi
 
 1. Conjunctive Normal Form is a logical expression that represents a conjunction of disjunctions of Boolean variables or their negations. It is the product of sums.
 
-2. For example, the CNF for the function $(f(x, y, z) = (x + y) \cdot (\overline{x} + z))$ looks like:
-    $$(f(x, y, z) = (x \cdot \overline{x}) + (x \cdot z) + (y \cdot \overline{x}) + (y \cdot z))$$
+2. For example, the CNF for the function $f(x, y, z) = (x + y) \cdot (\overline{x} + z)$ looks like:
+    $$f(x, y, z) = (x \cdot \overline{x}) + (x \cdot z) + (y \cdot \overline{x}) + (y \cdot z)$$
 
 3. In CNF, the function is expressed as a conjunction of disjunctions, where each term corresponds to one combination of input variables for which the function evaluates to 0.
 
@@ -773,7 +773,7 @@ The Principle of Duality is particularly useful when working with Boolean functi
 
 Perfect Disjunctive Normal Form is a Disjunctive Normal Form (DNF) in which there are no redundant (unnecessary) terms, i.e., those that have a value of 0 for all combinations of input values where the function evaluates to 1.
 
-For example, for the function $(f(x, y, z) = x \cdot y + \overline{x} \cdot z)$, the PDNF would be:
+For example, for the function $f(x, y, z) = x \cdot y + \overline{x} \cdot z)$, the PDNF would be:
 
 $$f(x, y, z) = x \cdot y + \overline{x} \cdot z$$
 
@@ -783,7 +783,7 @@ In this case, each term is essential for expressing the function.
 
 Perfect Conjunctive Normal Form is a Conjunctive Normal Form (CNF) in which there are no redundant (unnecessary) factors, i.e., those that have a value of 1 for all combinations of input values where the function evaluates to 0.
 
-For example, for the function $$(f(x, y, z) = (x + y) \cdot (\overline{x} + z))$$, the PCNF would be:
+For example, for the function $f(x, y, z) = (x + y) \cdot (\overline{x} + z)$, the PCNF would be:
 
 $$f(x, y, z) = (x + y) \cdot (\overline{x} + z)$$
 
@@ -901,9 +901,7 @@ The basic steps of minimization using the Karnaugh map:
 
 2. **Grouping ones:** Group adjacent cells that have the same value. Groups should be areas of a power of two (1, 2, 4, 8, etc.).
 
-3. **Selecting prime implicants:** Select prime implicants covering
-
- all ones on the map. Each group cell represents a prime implicant.
+3. **Selecting prime implicants:** Select prime implicants covering all ones on the map. Each group cell represents a prime implicant.
 
 4. **Building the minimized expression:** Compose the minimized expression using selected prime implicants.
 
