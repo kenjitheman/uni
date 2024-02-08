@@ -35,3 +35,4 @@ Icon?
 /.clangd/
 /.idea/
 *.DS_Store
+*.zip
