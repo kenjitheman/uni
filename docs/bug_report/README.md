@@ -1,5 +1,14 @@
 # Serene Sakura Anime Recommendation Engine Bug-Report
 
+<!--toc:start-->
+- [Serene Sakura Anime Recommendation Engine Bug-Report](#serene-sakura-anime-recommendation-engine-bug-report)
+  - [Bug Overview:](#bug-overview)
+  - [Bug Analysis:](#bug-analysis)
+  - [Bug Resolution:](#bug-resolution)
+  - [Bug Tracking:](#bug-tracking)
+  - [Conclusion:](#conclusion)
+<!--toc:end-->
+
 **Report ID:** SSRNE-2023-BUG-001  
 **Date:** December 15, 2023
 

@@ -1,5 +1,22 @@
 # Test Plan
 
+<!--toc:start-->
+- [Test Plan](#test-plan)
+  - [Project Information](#project-information)
+  - [Table of Contents](#table-of-contents)
+  - [1. Introduction](#1-introduction)
+  - [2. Test Objectives](#2-test-objectives)
+  - [3. Scope](#3-scope)
+  - [4. Test Strategy](#4-test-strategy)
+  - [5. Test Environment](#5-test-environment)
+  - [6. Test Deliverables](#6-test-deliverables)
+  - [7. Test Schedule](#7-test-schedule)
+  - [8. Test Cases](#8-test-cases)
+  - [9. Defect Tracking](#9-defect-tracking)
+  - [10. Risks and Assumptions](#10-risks-and-assumptions)
+  - [11. Approvals](#11-approvals)
+<!--toc:end-->
+
 ## Project Information
 
 - **Project Name:** Serene Sakura
