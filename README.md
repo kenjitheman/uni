@@ -4,6 +4,8 @@
 
 **all diagrams written using [mermaid.js](https://mermaid.js.org/), so open it on github**
 
+**all docs written using [markdown](https://www.markdownguide.org/)**
+
 ###
 
 <div align="center">
@@ -16,16 +18,4 @@
 
 ```sh
 git clone https://github.com/kenjitheman/uni.git
-```
-
-```sh
-gcc -o main main.c
-```
-
-```sh
-g++ -o main main.cpp
-```
-
-```sh
-./main
 ```
