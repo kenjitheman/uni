@@ -1,17 +1,44 @@
 #include <iostream>
 
-struct Rectangle {
-    int width;
-    int height;
+struct Human {
+    double height;
+    double weight;
 
-    Rectangle() : width(0), height(0) {}
+    Human() : height(0), weight(0){};
 
-    Rectangle(int w, int h) : width(w), height(h) {}
+    Human(int h, int w) : height(h), weight(w){};
 
     void display() {
-        std::cout << "rectangle: width = " << width << ", height = " << height
-            << std::endl;
-    }
+        std::cout << "+ human:\n\t- height: " << height << "\n\t- weight: " << weight << std::endl;
+    };
 
-    int area() { return width * height; }
+    double calculateBMI(double height, double weight) {
+        height /= 100;
+        double bmi = weight / (height * height);
+        return bmi;
+    };
+};
+
+int main() {
+    Human Man;
+    char choice;
+
+    std::cout << "+ ur height: ";
+    std::cin >> Man.height;
+
+    std::cout << "+ ur weight: ";
+    std::cin >> Man.weight;
+
+    std::cout << "+ info:\n";
+    Man.display();
+
+    std::cout << "+ wanna calc ur BMI? (y/N): ";
+    std::cin >> choice;
+    if (choice == 'y') {
+        std::cout << Man.calculateBMI(Man.height, Man.weight) << std::endl;
+    } else if (choice == 'N') {
+        return 0;
+    } else {
+        return 1;
+    }
 };
