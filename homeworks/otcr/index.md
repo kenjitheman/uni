@@ -1,12 +1,27 @@
 # semestre tasks
 
-- article (max 15 points)
-    - [ ] [link](_) `not done`
-
-- project (max 30 points)
-    - [x] [link](https://github.com/kenjitheman/fckjs)
-    - [x] [link](https://github.com/kenjitheman/hitori)
-    - [x] [link](https://github.com/kenjitheman/webmanjs)
-
-- throw semestre work (max 50 points):
-    - [ ] [link](_) `in progress`
+- Фінансова складова (презентація) 3 бали:
+    - [x] [link](https://github.com/kenjitheman/uni/blob/main/homeworks/otcr/finance_part.md)
+- Алгоритм створення ІТ проєкту (презентація) 3 бали:
+    - [x] [link](https://github.com/kenjitheman/uni/blob/main/homeworks/otcr/finance_part.md)
+- Project (max 30 points)
+    - [x] [https://github.com/kenjitheman/fckjs](https://github.com/kenjitheman/fckjs)
+    - [x] [https://github.com/kenjitheman/hitori](https://github.com/kenjitheman/hitori)
+    - [x] [https://github.com/kenjitheman/webmanjs](https://github.com/kenjitheman/webmanjs)
+- Проект (50 балів):
+    - [x] [https://github.com/kenjitheman/fckjs](https://github.com/kenjitheman/fckjs)
+    - [x] [https://github.com/kenjitheman/nanpa](https://github.com/kenjitheman/nanpa)
+    - [x] [https://github.com/kenjitheman/waifu4me](https://github.com/kenjitheman/waifu4me)
+- Активність протягом семестру (15 балів)/throw semestre work (max 50 points):
+    - [x] [https://seadclub.online](https://seadclub.online) + discord, telegram
+    - [x] [https://kenjitheman.dev](https://kenjitheman.dev)
+    - [x] [commits activity](https://github.com/kenjitheman?tab=overview&from=2024-05-01&to=2024-05-14)
+    - [x] [youtube video](https://www.youtube.com/channel/UC0djtgWHCyUXhA-F8UXmSMQ)
+- Сертифікат (20 балів):
+    - [x] [link](https://drive.google.com/file/d/1EK7QJjq1nW2QoKSKyeOkQBLU0S24kU4u/view?usp=sharing)
+- Тезис (5 балів):
+    - [x] [link](https://telegra.ph/The-Destructiveness-of-Dynamic-Types-in-Programming-A-Software-Entropy-Problem-05-28)
+- Final task (50 points)
+    - [ ] [link](https://docs.google.com/document/d/1Ii1yQpzs5DWmB1Udho9y9X1Mw8R33v_dQnP1Ny-FWGU/edit)
+- Article (max 15 points)
+    - [ ] not done
