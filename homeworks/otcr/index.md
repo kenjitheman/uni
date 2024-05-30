@@ -21,7 +21,17 @@
     - [x] [link](https://drive.google.com/file/d/1EK7QJjq1nW2QoKSKyeOkQBLU0S24kU4u/view?usp=sharing)
 - Тезис (5 балів):
     - [x] [link](https://telegra.ph/The-Destructiveness-of-Dynamic-Types-in-Programming-A-Software-Entropy-Problem-05-28)
-- Final task (50 points)
-    - [ ] [link](https://docs.google.com/document/d/1Ii1yQpzs5DWmB1Udho9y9X1Mw8R33v_dQnP1Ny-FWGU/edit)
+- Final attestation work (50 points):
+    - [x] [link](https://docs.google.com/document/d/1Ii1yQpzs5DWmB1Udho9y9X1Mw8R33v_dQnP1Ny-FWGU/edit)
+        - [x] [Опис продукту](./final_attestation_work/product_description.md)
+        - [x] [Діаграма Ганта](./final_attestation_work/gantt_diagram.md)
+        - [x] [Фінансовий менеджмент](./final_attestation_work/financial_management.md)
+        - [x] [Карта ризиків](./final_attestation_work/risk_map.md)
+        - [x] [Статут проєкту](./final_attestation_work/project_charter.md)
+        - [x] [Ділова комунікація](./final_attestation_work/business_communication.md)
+        - [x] [OKR](./final_attestation_work/okr.md)
+        - [x] [PDP](./final_attestation_work/pdp.md)
+        - [x] [CV](https://github.com/kenjitheman/cv/blob/main/cv.pdf)
+        - [ ] [Проект]
 - Article (max 15 points)
-    - [ ] not done
+    - [ ] not done, it will not be done
