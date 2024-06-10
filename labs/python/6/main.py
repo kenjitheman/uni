@@ -25,6 +25,3 @@ def task6(data):
 
 def task7(data):
     return sum(second for _, second in data)
-
-# wassup man who is reading this, i hope u have a great day and ur doing well in your life
-# u can fing me on: https://kenjitheman.dev
