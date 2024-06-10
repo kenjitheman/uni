@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 
-unsigned long long calculateHash(const std::string& str, int start, int end) {
+unsigned long long calculateHash(const std::string &str, int start, int end) {
     const unsigned int p = 31;
     const unsigned int m = 1e9 + 9;
     unsigned long long hashValue = 0;
@@ -14,7 +14,7 @@ unsigned long long calculateHash(const std::string& str, int start, int end) {
     return hashValue;
 }
 
-std::vector<int> searchRabinKarp(const std::string& text, const std::string& pattern) {
+std::vector<int> searchRabinKarp(const std::string &text, const std::string &pattern) {
     const unsigned int p = 31;
     const unsigned int m = 1e9 + 9;
 
@@ -35,7 +35,8 @@ std::vector<int> searchRabinKarp(const std::string& text, const std::string& pat
 
     std::vector<int> occurrences;
     for (int i = 0; i <= n - mPattern; ++i) {
-        unsigned long long currSubstrHash = (textHash[i + mPattern] + m - textHash[i]) % m;
+        unsigned long long currSubstrHash =
+            (textHash[i + mPattern] + m - textHash[i]) % m;
         if (currSubstrHash == patternHash * pPowers[i] % m) {
             if (text.substr(i, mPattern) == pattern) {
                 occurrences.push_back(i);
@@ -46,7 +47,7 @@ std::vector<int> searchRabinKarp(const std::string& text, const std::string& pat
     return occurrences;
 }
 
-void demonstrateRabinKarp(const std::string& text, const std::string& pattern) {
+void demonstrateRabinKarp(const std::string &text, const std::string &pattern) {
     std::cout << "+ text: " << text << std::endl;
     std::cout << "+ pattern: " << pattern << std::endl;
 
@@ -64,7 +65,7 @@ void demonstrateRabinKarp(const std::string& text, const std::string& pattern) {
 }
 
 int main() {
-    std::string text = "hellohellohellohello";
+    std::string text = "hello man";
     std::string pattern = "hello";
     demonstrateRabinKarp(text, pattern);
 
